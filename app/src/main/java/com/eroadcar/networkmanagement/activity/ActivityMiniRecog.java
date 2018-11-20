@@ -25,12 +25,7 @@ import java.util.Map;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-/**
- *  集成文档： http://ai.baidu.com/docs#/ASR-Android-SDK/top 集成指南一节
- *  demo目录下doc_integration_DOCUMENT
- *      ASR-INTEGRATION-helloworld  ASR集成指南-集成到helloworld中 对应 ActivityMiniRecog
- *      ASR-INTEGRATION-TTS-DEMO ASR集成指南-集成到合成DEMO中 对应 ActivityRecog
- */
+
 
 public class ActivityMiniRecog extends BaseActivity implements EventListener {
     protected TextView txtLog;
