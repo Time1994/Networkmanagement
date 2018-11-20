@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/grayth">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fifity"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:background="@null"
+            android:drawableLeft="@mipmap/icon_back"
+            android:drawablePadding="@dimen/five"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_fourteen" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLength="14"
+            android:text="姓名"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_eighteen" />
+
+        <TextView
+            android:id="@+id/other_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/fifteen"
+            android:gravity="right|center_vertical"
+            android:text="完成"
+            android:textColor="@color/greens"
+            android:textSize="@dimen/text_sixteen" />
+
+
+    </RelativeLayout>
+
+    <com.eroadcar.networkmanagement.view.ClearEditText
+        android:id="@+id/mobile_cet"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fortyf"
+        android:layout_below="@id/top_rl"
+        android:layout_marginTop="@dimen/five"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:hint="请输入姓名"
+        android:maxLength="11"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/ten"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grayt"
+        android:textSize="@dimen/text_fourteen" />
+
+
+</RelativeLayout>

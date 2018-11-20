@@ -1,0 +1,105 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:2:1-46:12
+	package
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+		INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:5:5-39:19
+activity#cn.sharp.android.ncr.NameCardRec
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:6:9-10:20
+	android:label
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:8:13-45
+	android:theme
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:9:13-42
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:7:13-40
+activity#cn.sharp.android.ncr.RecFromSdcard
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:11:9-14:58
+	android:label
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:13:13-45
+	android:theme
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:14:13-55
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:12:13-42
+activity#cn.sharp.android.ncr.NamecardImageGallery
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:15:9-20:58
+	android:screenOrientation
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:19:13-49
+	android:label
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:18:13-45
+	android:configChanges
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:17:13-133
+	android:theme
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:20:13-55
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:16:13-49
+activity#cn.sharp.android.ncr.DisplayRecResult
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:21:9-28:20
+	android:label
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:23:13-53
+	android:theme
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:24:13-55
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:22:13-45
+intent-filter#action:name:cn.sharp.android.ncr.DisplayRecResult
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:25:13-27:29
+action#cn.sharp.android.ncr.DisplayRecResult
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:26:17-80
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:26:25-77
+activity#cn.sharp.android.ncr.StaticRecFromCamera
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:29:9-34:61
+	android:screenOrientation
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:33:13-50
+	android:label
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:32:13-45
+	android:configChanges
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:31:13-133
+	android:theme
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:34:13-49
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:30:13-48
+activity#cn.sharp.android.ncr.PrefSettings
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:35:9-38:58
+	android:label
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:37:13-47
+	android:theme
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:38:13-55
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:36:13-41
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:41:5-81
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:41:22-78
+uses-permission#android.permission.CAMERA
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:42:5-65
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:42:22-62
+uses-permission#android.permission.READ_CONTACTS
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:43:5-72
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:43:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:44:5-73
+	android:name
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml:44:22-70
+uses-sdk
+INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+		INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+		ADDED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml
+		INJECTED from E:\android_studio_workspace\Networkmanagement\nameCardRec\src\main\AndroidManifest.xml

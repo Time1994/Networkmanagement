@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayth"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/include_toptitlet_black"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fortyf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/data_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_margin="@dimen/five"
+            android:background="@drawable/login_background_image"
+            android:orientation="horizontal"
+            android:padding="@dimen/ten">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/ten"
+                android:src="@mipmap/icon_data" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:gravity="center_vertical"
+                android:text="基本资料"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_fourteen" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/five"
+                    android:src="@mipmap/icon_inright" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/eighty"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginRight="@dimen/five"
+            android:background="@drawable/login_background_image"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/build_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_weight="1"
+                android:background="@drawable/login_background_image"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/ten"
+                    android:src="@mipmap/icon_build" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:gravity="center_vertical"
+                    android:text="新建子账号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_fourteen" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/five"
+                        android:src="@mipmap/icon_inright" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/pwd_cet"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/power_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_weight="1"
+                android:background="@drawable/login_background_image"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/ten"
+                    android:src="@mipmap/icon_power" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:gravity="center_vertical"
+                    android:text="子账号权限分配"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_fourteen" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/five"
+                        android:src="@mipmap/icon_inright" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thundred"
+            android:layout_margin="@dimen/five"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginRight="@dimen/five"
+            android:background="@drawable/login_background_image"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/tool_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_weight="1"
+                android:background="@drawable/login_background_image"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/ten"
+                    android:src="@mipmap/icon_tool" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:gravity="center_vertical"
+                    android:text="实用小工具"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_fourteen" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/five"
+                        android:src="@mipmap/icon_inright" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/pwd_cet"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/tel_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_weight="1"
+                android:background="@drawable/login_background_image"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/ten"
+                    android:src="@mipmap/icon_tel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:gravity="center_vertical"
+                    android:text="总部电话"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_fourteen" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/five"
+                        android:src="@mipmap/icon_inright" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/pwd_cet"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/update_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_weight="1"
+                android:background="@drawable/login_background_image"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/ten"
+                    android:src="@mipmap/icon_update" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:gravity="center_vertical"
+                    android:text="版本升级"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_fourteen" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/five"
+                        android:src="@mipmap/icon_inright" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/pwd_cet"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/about_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_weight="1"
+                android:background="@drawable/login_background_image"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/ten"
+                    android:src="@mipmap/icon_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:gravity="center_vertical"
+                    android:text="关于我们"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_fourteen" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/five"
+                        android:src="@mipmap/icon_inright" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/pwd_cet"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:background="@color/gray" />
+
+            <LinearLayout
+
+                android:id="@+id/advise_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_weight="1"
+                android:background="@drawable/login_background_image"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/ten"
+                    android:src="@mipmap/icon_advise" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:gravity="center_vertical"
+                    android:text="意见反馈"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_fourteen" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/five"
+                        android:src="@mipmap/icon_inright" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/forty"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/forty"
+        android:layout_marginRight="@dimen/forty"
+        android:layout_marginBottom="@dimen/thirty"
+        android:background="@drawable/logout_background"
+        android:enabled="true"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_thirteen" />
+</RelativeLayout>

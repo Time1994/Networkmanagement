@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.2"
+    defaultConfig {
+        applicationId "ccom.eroadcar.networkmanagement"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        applicationId "com.eroadcar.networkmanagement" //JPush 上注册的包名.
+
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+//            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+            moduleName "nameCardRec"
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "a3003c9c5942bd5452973919", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha05'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    implementation project(path: ':ocr_ui')
+    implementation files('libs/ocr-sdk.jar')
+    implementation 'cn.jiguang.sdk:jpush:3.1.6'
+    // 此处以JPush 3.1.6 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:1.2.5'
+    implementation project(path: ':Dialog_lib')
+    // 此处以JCore 1.2.5 版本为例。
+    implementation files('libs/volleyajson.jar')
+    implementation 'q.rorbin:badgeview:1.1.2'
+    implementation files('libs/umeng_social_sdk.jar')
+    implementation 'com.example.zhouwei.library:library:1.0.0'
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    implementation project(path: ':core')
+    implementation project(path: ':uiasr')
+    implementation project(path: ':uidialog')
+    implementation project(path: ':nameCardRec')
+    implementation 'me.imid.swipebacklayout.lib:library:1.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+}

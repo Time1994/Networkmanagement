@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayth"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/include_toptitlet_black"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fortyf"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginRight="@dimen/five"
+        android:background="@drawable/login_background_image"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/hundred"
+            android:layout_height="@dimen/hundred"
+            android:layout_marginTop="@dimen/fifity"
+            android:src="@mipmap/icon_buildlogo" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seventy"
+            android:layout_marginTop="@dimen/thirty"
+            android:layout_marginRight="@dimen/seventy"
+            android:layout_marginBottom="@dimen/ten"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.eroadcar.networkmanagement.view.ClearEditText
+                android:id="@+id/name_cet"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入姓名"
+                android:inputType="text"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/thirty"
+                android:paddingRight="@dimen/ten"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grayz"
+                android:textSize="@dimen/text_thirteen" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/text_twelve"
+                android:src="@mipmap/icon_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/name_cet"
+                android:layout_marginLeft="@dimen/text_twelve"
+                android:layout_marginRight="@dimen/text_twelve"
+                android:background="@color/graya" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seventy"
+            android:layout_marginRight="@dimen/seventy"
+            android:layout_marginBottom="@dimen/ten"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.eroadcar.networkmanagement.view.ClearEditText
+                android:id="@+id/phone_cet"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="@dimen/thirty"
+                android:paddingRight="@dimen/ten"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grayz"
+                android:textSize="@dimen/text_thirteen" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/text_twelve"
+                android:src="@mipmap/icon_phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/phone_cet"
+                android:layout_marginLeft="@dimen/text_twelve"
+                android:layout_marginRight="@dimen/text_twelve"
+                android:background="@color/graya" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seventy"
+            android:layout_marginRight="@dimen/seventy"
+            android:layout_marginBottom="@dimen/ten"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.eroadcar.networkmanagement.view.ClearEditText
+                android:id="@+id/pwd_cet"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/forty"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入要新建的密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="@dimen/thirty"
+                android:paddingRight="@dimen/ten"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grayz"
+                android:textSize="@dimen/text_thirteen" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/text_twelve"
+                android:src="@mipmap/icon_pwds" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/pwd_cet"
+                android:layout_marginLeft="@dimen/text_twelve"
+                android:layout_marginRight="@dimen/text_twelve"
+                android:background="@color/graya" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sure_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/forty"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/fifity"
+        android:layout_marginRight="@dimen/fifity"
+        android:layout_marginBottom="@dimen/thirty"
+        android:background="@drawable/green_background"
+        android:text="新建"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_thirteen" />
+</RelativeLayout>
